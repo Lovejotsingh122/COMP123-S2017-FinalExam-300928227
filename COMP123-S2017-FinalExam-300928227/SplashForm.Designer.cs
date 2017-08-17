@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashForm));
             this.Timer = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.heading = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,6 +50,19 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // heading
+            // 
+            this.heading.AutoSize = true;
+            this.heading.Font = new System.Drawing.Font("Miramonte", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.heading.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.heading.Location = new System.Drawing.Point(94, 292);
+            this.heading.Name = "heading";
+            this.heading.Size = new System.Drawing.Size(367, 86);
+            this.heading.TabIndex = 1;
+            this.heading.Text = "Pick the Highest Card \r\n    By: 300928227";
+            this.heading.Click += new System.EventHandler(this.label1_Click);
             // 
             // SplashForm
             // 
@@ -57,6 +71,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(600, 500);
             this.ControlBox = false;
+            this.Controls.Add(this.heading);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -66,6 +81,7 @@
             this.Text = "SplashForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -73,5 +89,6 @@
 
         private System.Windows.Forms.Timer Timer;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label heading;
     }
 }

@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
+ * Name:Lovejot Singh   
+ * Date:18/08/2017
+ * StudentID:300928227
  * Description:
  * Version:
  */
