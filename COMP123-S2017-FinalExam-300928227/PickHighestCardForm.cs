@@ -1,4 +1,5 @@
-﻿using System;
+﻿using COMP123_S2017_FinalExam_StudentID;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,11 +12,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
+ * Name:Lovejot Singh
+ * Date:17/08/2017
+ * StudentID:300928227
+ * Description:Modified form
+ * Version:0.02
  */
 
 namespace COMP123_S2017_FinalExam_300928227
@@ -29,6 +30,7 @@ namespace COMP123_S2017_FinalExam_300928227
         Deck _deck;
         Hand _hand;
         int _maximumPoints;
+        private ScoreBoard _scoreboard;
 
         // PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public List<PictureBox> DealtCardPictureBoxList
@@ -109,6 +111,18 @@ namespace COMP123_S2017_FinalExam_300928227
             set
             {
                 this._maximumPoints = value;
+            }
+        }
+
+        public ScoreBoard ScoreBoard
+        {
+            get
+            {
+                return this._scoreboard;
+            }
+            set
+            {
+                this._scoreboard = value;
             }
         }
 
@@ -222,6 +236,7 @@ namespace COMP123_S2017_FinalExam_300928227
         private void PickHighestCardForm_Load(object sender, EventArgs e)
         {
             // Initialize ScoreBoard HERE
+            this.ScoreBoard = new ScoreBoard(this.ScoreTextBox, this.TimeTextBox, this.FinalScoreTextBox);
 
             // Initialize the App Sounds
             this._buildDealtCardPictureBoxList();
@@ -273,7 +288,7 @@ namespace COMP123_S2017_FinalExam_300928227
                 UserMessageTextBox.Text = "You Got It!";
 
                 //Uncomment this --> ScoreBoard.Score += this.MaximumPoints;
-
+                ScoreBoard.Score += this.MaximumPoints;
                 DealButton.Enabled = true;
             }
             // otherwise Red
@@ -396,6 +411,11 @@ namespace COMP123_S2017_FinalExam_300928227
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void ScoreTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

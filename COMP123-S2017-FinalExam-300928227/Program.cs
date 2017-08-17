@@ -8,8 +8,8 @@ using System.Windows.Forms;
  * Name:Lovejot Singh
  * Date:17/8/2017
  * StudentID:300928227
- * Description:
- * Version:
+ * Description: added splash form
+ * Version:0.01
  */
 
 namespace COMP123_S2017_FinalExam_300928227
@@ -24,7 +24,7 @@ namespace COMP123_S2017_FinalExam_300928227
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PickHighestCardForm());
+            Application.Run(new SplashForm());
         }
     }
 }
