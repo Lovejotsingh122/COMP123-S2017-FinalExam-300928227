@@ -7,7 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * Name: Lovejot singh
+ * Date:17/08/2017
+ * Student Id:300928227
+ * desc:Adding a splash form
+ * version 0.01
+ */
 namespace COMP123_S2017_FinalExam_300928227
 {
     public partial class SplashForm : Form

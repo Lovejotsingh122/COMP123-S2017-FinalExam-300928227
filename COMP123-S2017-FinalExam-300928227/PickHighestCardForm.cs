@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:Lovejot Singh   
- * Date:18/08/2017
+ * Name:Lovejot Singh
+ * Date:17/08/2017
  * StudentID:300928227
- * Description:
- * Version:
+ * Description:Modified form
+ * Version:0.02
  */
 
 namespace COMP123_S2017_FinalExam_300928227
