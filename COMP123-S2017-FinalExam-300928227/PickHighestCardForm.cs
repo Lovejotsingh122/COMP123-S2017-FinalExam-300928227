@@ -417,5 +417,10 @@ namespace COMP123_S2017_FinalExam_300928227
         {
 
         }
+
+        private void UserMessageTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

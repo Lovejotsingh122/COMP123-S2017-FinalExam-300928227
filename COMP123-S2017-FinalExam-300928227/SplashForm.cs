@@ -33,12 +33,20 @@ namespace COMP123_S2017_FinalExam_300928227
         {
 
         }
-        private void Timer_Tick(object sender, EventArgs e)
+       /* private void Timer_Tick(object sender, EventArgs e)
         {
             this.PickHighestCardForm.Show();
             this.Hide();
 
-            Timer.Enabled = false; // turn timer off
+            CardTimer.Enabled = false; // turn timer off
+        }*/
+
+        private void CardTimer_Tick(object sender, EventArgs e)
+        {
+            PickHighestCardForm pick = new PickHighestCardForm();
+            pick.Show();
+            this.Hide();
+            CardTimer.Enabled = false;
         }
     }
 }

@@ -30,16 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashForm));
-            this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.CardTimer = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.heading = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Timer
+            // CardTimer
             // 
-            this.Timer.Enabled = true;
-            this.Timer.Interval = 3000;
+            this.CardTimer.Enabled = true;
+            this.CardTimer.Interval = 3000;
+            this.CardTimer.Tick += new System.EventHandler(this.CardTimer_Tick);
             // 
             // pictureBox1
             // 
@@ -87,7 +88,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Timer Timer;
+        private System.Windows.Forms.Timer CardTimer;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label heading;
     }

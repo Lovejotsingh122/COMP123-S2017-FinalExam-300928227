@@ -172,6 +172,7 @@
             this.UserMessageTextBox.TabStop = false;
             this.UserMessageTextBox.Text = "Click the Deal Button!";
             this.UserMessageTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UserMessageTextBox.TextChanged += new System.EventHandler(this.UserMessageTextBox_TextChanged);
             // 
             // ResetButton
             // 
