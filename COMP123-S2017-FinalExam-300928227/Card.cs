@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-/*
+/**
  * Name: Lovejot Singh
  * Date: 18/08/2017
  * Description: This is the Card Class
  * Version: 0.3 - Added the OverWrite method
- */
+ **/
 
 namespace COMP123_S2017_FinalExam_300928227
 {
